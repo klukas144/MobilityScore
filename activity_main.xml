@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_person_pin_circle_24"
+            app:tint="@color/tollesGrau"
+            android:backgroundTint="@color/transparent"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Mobility-Score App"
+            android:textSize="26dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_settings_24"
+            app:tint="@color/tollesGrau" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/hw"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/green"
+        android:text="KARTE"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
