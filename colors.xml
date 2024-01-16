@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black50">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tollesGrau">#717171</color>
+    <color name="yellow">#FFC107</color>
+    <color name="green">#66D242</color>
+    <color name="green50">#8066D242</color>
+    <color name="red">#FF0000</color>
+    <color name="red50">#80FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="score6">#a5281d</color>
+    <color name="score5">#dd3628</color>
+    <color name="score4">#edc046</color>
+    <color name="score3">#fbfe58</color>
+    <color name="score2">#a0cc63</color>
+    <color name="score1">#5bab5c</color>
+
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:id="@+id/scorel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/rounded_corner_view"
+            android:backgroundTint="@color/green"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scorel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scorel1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Dein Score"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showScore"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@id/scorel2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/numberScore"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+
+            <ImageButton
+                android:id="@+id/fab"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/rounded_corner_view"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_keyboard_arrow_down_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailedScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/showScore">
+
+        <LinearLayout
+            android:id="@+id/scorel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtFoot"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:text="Fuß"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scorer1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/scorel3">
+
+            <TextView
+                android:id="@+id/scoreFoot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scorel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scorel3">
+
+            <TextView
+                android:id="@+id/txtPT"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:text="ÖV"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scorer2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/scorer1"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/scorel4">
+
+            <TextView
+                android:id="@+id/scorePT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/scorel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scorel4">
+
+            <TextView
+                android:id="@+id/txtBike"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:text="Fahrrad"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scorer4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/scorel4"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/scorel5">
+
+            <TextView
+                android:id="@+id/scoreBike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/scorel6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scorel5">
+
+            <TextView
+                android:id="@+id/txtNextBike"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:text="NextBike"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scorer6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/scorer4"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/scorel6">
+
+            <TextView
+                android:id="@+id/scoreNextbike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scorel7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scorel6">
+
+            <TextView
+                android:id="@+id/txtMIV"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:text="MIV"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scorer7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/scorer6"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/scorel7">
+
+            <TextView
+                android:id="@+id/scoreMIV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

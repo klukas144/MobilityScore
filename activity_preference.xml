@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PreferenceActivity">
+
+    <LinearLayout
+        android:id="@+id/prefl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/rounded_corner_view"
+            android:backgroundTint="@color/green"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prefl1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Deine Mobilitätsvoraussetzungen"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prefl2">
+
+        <TextView
+            android:id="@+id/txtLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center_vertical"
+            android:text="Führerschein vorhanden"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/prefl2"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/prefl3">
+
+        <Switch
+            android:id="@+id/switch_license"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:showText="true"
+            android:textOff=" "
+            android:textOn=" "
+            tools:checked="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prefl3">
+
+        <TextView
+            android:id="@+id/txtCar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center_vertical"
+            android:text="eigenes Auto vorhanden"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/prefl3"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/prefl4">
+
+        <Switch
+            android:id="@+id/switch_car"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:showText="true"
+            android:textOff=" "
+            android:textOn=" "
+            tools:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_carDistance"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/prefl4"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_carDist"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_directions_car_24" />
+
+        <EditText
+            android:id="@+id/txtCarDistance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_carDist"
+            android:background="#00000000"
+            android:hint="Distanz in m"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black50" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_carDistance">
+
+        <TextView
+            android:id="@+id/txtBike"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center_vertical"
+            android:text="eigenes Fahrrad vorhanden"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_carDistance"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/prefl5">
+
+        <Switch
+            android:id="@+id/switch_bike"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:checked="true"
+            android:showText="true"
+            android:textOff=" "
+            android:textOn=" "
+            tools:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bikeDistance"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/prefl5"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_bikeDist"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_directions_bike_24" />
+
+        <EditText
+            android:id="@+id/txtBikeDistance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_bikeDist"
+            android:background="#00000000"
+            android:hint="Distanz in m"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black50" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bikeDistance">
+
+        <TextView
+            android:id="@+id/txtPT"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center_vertical"
+            android:text="ÖPNV-Abo vorhanden"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_bikeDistance"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/prefl8"
+        android:layout_toRightOf="@id/prefl6">
+
+        <Switch
+            android:id="@+id/switch_pt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:checked="true"
+            android:showText="true"
+            android:textOff=" "
+            android:textOn=" "
+            tools:checked="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/prefl7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prefl6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textFav"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="Lieblingsverkehrsmittel"/>
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/prefl9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_toRightOf="@+id/prefl7"
+            android:layout_below="@+id/prefl8">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MIV" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ÖV"
+                android:buttonTint="@color/black"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton3"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fahrrad" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton4"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuß" />
+
+        </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnSavePreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green"
+        android:text="VORAUSSETZUNGEN SPEICHERN"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
